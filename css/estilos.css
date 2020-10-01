@@ -1,0 +1,415 @@
+@import url('https://fonts.googleapis.com/css2? family = Epilogue: wght @ 300; 400; 700 & display = swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family:'Epílogo', sans-serif;
+}
+#menu-bar, label{
+    display: none;
+}
+.contenedor{
+    width: 90%;
+    padding: 60px 0;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+h2{
+    color: #642a73;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+h3{
+    color: #642a73;
+}
+/*--------------------------------Estilos header--------------------------------*/
+header{
+    width: 100%;
+    height: 600px;
+    background-color: rgba(238,114,114,0.7);
+    background-image: url(../img/portada.jpg);
+    background-size: cover;
+    background-blend-mode: soft-light;
+    background-attachment: fixed;
+    position: relative;
+}
+header h1{
+    float: left;
+    padding: 38px 0 0 30px;
+    color: #fff;
+    font-size: 40px;
+}
+#menu{
+    float: right;
+    padding: 52px 30px 0 0;
+}
+#menu a{
+    color: #fff;
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: 20px;
+}
+#menu a:hover{
+    text-decoration: underline;
+}
+.ola{
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+}
+.texto-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 350px;
+    width: 100%;
+    flex-direction: column;
+}
+.texto-header h2{
+    color: #fff;
+    font-size: 40px;
+}
+.texto-header p{
+    color: #fff;
+    font-size: 30px;
+    font-weight: 300px;
+}
+/*--------------------------------Estilos Productos--------------------------------*/
+.contenedor-nosotros{
+    display: flex;
+    justify-content: space-between;
+}
+.contenedor-nosotros img, .txt-nostros{
+    width: 48%;
+}
+
+.txt-nosotros h3{
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+.txt-nosotros h3 span{
+    background: #4d0686;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    padding: 4px;
+    text-align: center;
+    color: #fff;
+    box-shadow: 0 0 6px 0 rgba(0,0,0.8);
+}
+.txt-nosotros p{
+    padding: 0 0 30px 15px;
+    text-align: justify;
+    font-weight: 300;
+}
+/*--------------------------------Estilos Portafolio--------------------------------*/
+#portafolio{
+    background: #dcdddd;
+    padding-bottom: 30px;
+}
+#portafolio h2{
+    padding-top: 20px;
+}
+.galeria{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.imagen{
+    width: 24%;
+    margin-bottom: 10px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 6px 0 rgba(0,0,0.5);
+}
+.imagen >img{
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+.hover{
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    background: hsla(273,90%,20%, 0.7);
+    transform: scale(0);
+    transition: all 0.3s;
+    color: #fff;
+}
+.imagen:hover .hover{
+    transform: scale(1);
+}
+/*--------------------------------Estilos Clientes--------------------------------*/
+.cards{
+    display: flex;
+    justify-content: space-between;
+}
+.cards .card{
+    background: #4d0686;
+    display: flex;
+    width: 46%;
+    height: 200px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    padding: 15px;
+}
+.card img{
+    display: block;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 6px solid #fff;
+}
+.txt-card{
+    color: #fff;
+    width: 70%;
+    margin-left: 10px;
+}
+.txt-card p{
+    padding-top: 10px;
+}
+/*--------------------------------Estilos Servicios--------------------------------*/
+.servicios{
+    background: #dcdddd;
+    padding-bottom: 30px;
+}
+.servicio-cont{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.servicio-int{
+    width: 32%;
+    text-align: center;
+}
+.servicio-int img{
+    width: 90%;
+}
+.servicio-int h3{
+    padding:10px 0;      
+}
+.servicio-int p{
+    text-align: justify;
+}
+/*--------------------------------Estilos Footer--------------------------------*/
+footer{
+    background: #414141;
+    margin: auto;
+    padding: 60px 0 30px;
+    overflow: hidden;
+}
+.contenedor-footer{
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    margin: auto;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #ccc;  
+}
+.content-foo{
+    text-align: center;
+}
+.content-foo h4{
+    padding-bottom: 10px;
+    border-bottom: 3px solid #af20d3;
+    margin-bottom: 15px;
+    color: #fff;
+}
+.content-foo p{
+    color: #ccc;
+}
+.copy{
+    font-size: 20px;
+    color: #9e9797;
+    margin-top: 20px;
+}
+.sociales{
+    text-align: center;
+    font-size: 30px;
+}
+.sociales a{
+    color: #9e9797;
+    text-decoration: none;
+}
+/*--------------------------------Estilos Responsive--------------------------------*/
+@media(max-width:900px){
+    header{
+        background-position: center;
+    }
+    #menu a{
+        font-size: 17px;
+    }
+    .contenedor-nosotros{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .contenedor-nosotros img{
+        width: 98%;
+    }
+    .txt-nosotros{
+        width: 90%;
+    }
+    /*Galeria*/
+    .imagen{
+        width: 48%;
+    }
+    /*Clientes*/
+    .cards{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .cards .card:first-child{
+         margin-bottom: 30px;
+    }
+    /*Servicios*/
+    .servicio-cont{
+        justify-content: center;
+        flex-direction: column;
+    }
+    .servicio-int{
+        width: 100%;
+        text-align: center;
+    }
+    .servicio-int:nth-child(1), .servicio-int:nth-child(2){
+        margin-bottom: 60px;
+    }
+    .servicio-inte img{
+        width: 90%;
+    }
+}
+@media(max-width:760px){
+       .contenedor{
+        width: 98%;
+        margin:auto;
+    }
+    header label{
+        display: block;
+        width: 50px;
+        height: 45px;
+        font-size: 35px;
+        color: #fff;
+        background: hsla(273,90%,20%, 0.7);
+        border-radius: 5px;
+        margin-right: 10px;
+        padding: 3px 3px 0 0;
+        margin-top: 30px;
+        position: fixed;
+        right: 0;
+        transition: all 0.5s;
+    }
+    header h1{
+        font-size: 40px;
+        margin-top: -9px;
+    }
+    #menu, label{
+        position: fixed;
+        z-index: 1000;
+    }
+    #menu{
+        width: 80%;
+        height: 100vh;
+        background:#dcdddd;
+        padding: 10px;
+        margin-left: -100%;
+        transition: all 0.5s;
+    }
+    #menu a{
+        display: flex;
+        justify-content: center;
+        height: 60.5px;
+        padding: 20px 0;
+        color: #333;
+        border-bottom: 1px solid rgba(255,255,255,0.4);
+        width: 100%;
+    }
+    #menu-bar:checked ~#menu{
+        margin: 0;
+    }
+    .texto-header h2{
+        font-size: 30px;
+    }
+    .texto-header p{
+        font-size: 24px;
+    }
+    .portafolio .contenedor{
+        width: 80%;
+    }
+    .nosotros h2{
+        margin-top: -50px;
+    }
+    .cards .card{
+        width: 80%;
+    }
+    .contenedor-footer{
+        flex-direction: column;
+        border: none;
+    }
+    .content-foo{
+        margin-bottom: 20px;
+    }
+    .content-foo h4{
+        border:none;   
+    }
+    .content-foo p{
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 20px;
+    }
+    .copy{
+        font-size: 15px;
+    }
+    .sociales{
+        font-size: 25px;
+    }
+}
+@media(max-width:480px){
+    .imagen{
+        width: 90%;
+        margin:auto;
+        margin-bottom: 20px;
+    }
+    .cards .card{
+        width: 90%;
+        height: 280px;
+    }
+    .cards .card img{
+        width: 90px;
+        height: 90px;
+    }
+    .card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
